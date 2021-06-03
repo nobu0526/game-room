@@ -1,9 +1,26 @@
 <div class="chat-header">
   <div class ="left-header">
     <div class = "header-title">
+    <% if user_signed_in?%>
       ユーザ名
+      <% else %>
+      新規登録もしくはログインしてださい
+      <% end %>
     </div>
   </div>
+
+  <div class = "users-edit">
+    <div class = "user-edit">
+      <a href ="#" >新規登録 </a>
+      </div>
+      </div>
+
+      <div class = "users-edit">
+    <div class = "user-edit">
+     <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'%>
+
+      </div>
+      </div>
 
 
   <div class = "right-header">
