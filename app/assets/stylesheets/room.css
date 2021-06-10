@@ -93,3 +93,9 @@ select {
 .field_with_errors {
   display: contents;
 }
+
+.image1{
+  height: 100ph;
+  width: 100pw;
+  
+}
