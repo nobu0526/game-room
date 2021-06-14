@@ -47,3 +47,11 @@
 
 - belongs_to :room
 - belongs_to :user
+
+## Relationshipsテーブル
+
+| Column        | Type    | Options     |
+| --------------| ------- | ------------|
+| content       | string  |             |
+| follower_id   | integer | null: false |
+| room          | integer | null: false |

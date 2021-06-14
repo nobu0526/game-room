@@ -21,6 +21,8 @@
   font-size: 16px;
   color: #FAFAFA;
   text-decoration: none;
+  display:flex;
+  
 }
 
 .create-room a {
@@ -29,6 +31,7 @@
   padding: 14px;
   color: deepskyblue;
   text-decoration: none;
+  padding:20px;
 }
 
 .rooms {

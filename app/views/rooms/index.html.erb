@@ -2,7 +2,14 @@
   <div class='side-bar'>
    <%= render "messages/side_bar" %>
   </div>
-  <div class = image1>
- <img src = "images/213f2aa60b061f96f738bea3b7adf718_t.jpeg"> 
- </div>
+
+  <div class = "main">
+    <div class = "image1">
+       <img src = "/assets/213f2aa60b061f96f738bea3b7adf718_t.jpeg"> 
+       <%if user_signed_in?%>
+         マイページ
+         <%end%>
+         
+   </div>
+  </div>
 </div>

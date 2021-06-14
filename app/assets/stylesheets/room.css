@@ -94,8 +94,11 @@ select {
   display: contents;
 }
 
-.image1{
-  height: 100ph;
-  width: 100pw;
-  
-}
+.main{
+  height: 500px;
+  width: 100%;
+  background-color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
