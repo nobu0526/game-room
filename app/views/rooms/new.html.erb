@@ -18,7 +18,7 @@
 
       <div class='chat-room-form__field--right'>
        <select name="room[user_ids][]">
-         <option>チャットするユーザを洗濯してください</option>
+         <option>チャットするユーザを選択してください</option>
             <% User.where.not(id: current_user.id).each do |user| %>
          <option value =<%= user.id %>><%= user.nickname%></option>
          <%end%>
