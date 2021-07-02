@@ -7,9 +7,16 @@
     <div class = "image1">
        <img src = "/assets/213f2aa60b061f96f738bea3b7adf718_t.jpeg"> 
        <%if user_signed_in?%>
-         マイページ
+        <div class="users_name">
+          <% @users.each do |user| %>
+             <div class="user-name">
+               <%= link_to user.nickname, user_path(user) %>
+            </div>
+           </div>
+        </div>
+     <%end%>
          <%end%>
-         
+
    </div>
   </div>
 </div>
