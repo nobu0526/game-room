@@ -1,7 +1,16 @@
 <div class="side-bar-header">
   <div class = "header-name">
   <% if user_signed_in? %>
-    <%= link_to current_user.nickname, user_path(current_user.id) %>
+  
+    <span><%= current_user.nickname %>
+            <ul class="create-room">
+              <li>
+                <%= link_to "マイページ", "/users/#{current_user.id}" %>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              </li>
+            </ul>
+          </span>
+          
     </div>
     
     <div class = "create-room">
