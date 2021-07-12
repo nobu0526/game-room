@@ -76,4 +76,4 @@
 | follower_id   | integer | null: false |
 | room          | integer | null: false |
 
-https://gyazo.com/1ab47863314eddb8862186903602d356
+<img width="525" alt="1ab47863314eddb8862186903602d356" src="https://user-images.githubusercontent.com/82923269/125223514-dd79fb80-e306-11eb-86a8-05a738753a12.png">
