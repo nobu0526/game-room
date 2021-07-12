@@ -93,3 +93,29 @@ select {
 .field_with_errors {
   display: contents;
 }
+
+.main{
+  height: 500px;
+  width: 100%;
+  background-color:white;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+ }
+
+ .users_name{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+ 
+ }
+
+ .user_name{
+  display: inline-block;
+  padding: 12px 20px;
+  color: #fff;
+  background-color: #38aef0;
+  border: 0;
+   
+ }

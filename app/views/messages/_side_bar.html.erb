@@ -1,19 +1,37 @@
 <div class="side-bar-header">
   <div class = "header-name">
-    <%= link_to current_user.nickname, user_path(current_user) %>
+  <% if user_signed_in? %>
+  
+    <span><%= current_user.nickname %>
+            <ul class="create-room">
+              <li>
+                <%= link_to "マイページ", "/users/#{current_user.id}" %>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+              </li>
+            </ul>
+          </span>
+          
     </div>
     
     <div class = "create-room">
     <%= link_to "チャットを作成する" , new_room_path %>
+    <% else %>
+   <%= link_to"新規登録を行う", new_user_registration_path, class:"btn" %>
+   <%= link_to"ログインする", new_user_session_path, class:"btn"%>
+    <% end %>
   </div>
 </div >
 
+<%if user_signed_in? %>
 <div class="rooms">
   <% current_user.rooms.each do |room| %>
-    <div class="room">
+     <div class="room">
       <div class="room-name">
-       <%= link_to room.name, room_messages_path(room) %>
+       <%= link_to current_user.followings, room_messages_path(room) %>
       </div>
     </div>
   <% end %>
-</div>
+ </div>
+ <%end%>
+
+ 
