@@ -76,4 +76,14 @@
 | follower_id   | integer | null: false |
 | room          | integer | null: false |
 
-<img width="525" alt="1ab47863314eddb8862186903602d356" src="https://user-images.githubusercontent.com/82923269/125223514-dd79fb80-e306-11eb-86a8-05a738753a12.png">
+以下画面モックにてアプリ構想ご紹介させていただきます。
+
+<img width="464" alt="68394b6571bffc03406dc596ece28948" src="https://user-images.githubusercontent.com/82923269/125224223-267e7f80-e308-11eb-917b-384a44420df2.png">
+
+
+
+①左上青色の欄にて自身のユーザ情報等々を表示致します。
+②左下緑色の欄にてフォロー及びフォローされているユーザーを表示致します。
+③右上淡い青色の欄にて②にて選択されたユーザー情報を表示致します。
+④右真ん中の灰色欄にて②で選択されたユーザとのメッセージのやりとりが表示されます。
+⑤右下白及び青色にてメッセージのテキスト編集及び送信を行えます。
