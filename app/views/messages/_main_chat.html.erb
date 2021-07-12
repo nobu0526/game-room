@@ -2,7 +2,7 @@
   <div class ="left-header">
     <div class = "header-title">
     <% if user_signed_in?%>
-      <%= @room.name %>
+      <%= @user.nickname %>さんとのメッセージルーム
       <% else %>
       新規登録もしくはログインしてださい
       <% end %>
@@ -18,7 +18,7 @@
   <% else %>
       <div class = "users-edit">
     <div class = "user-edit">
-     <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'%>
+     <%# <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'btn'%> 
 
       </div>
       </div>
