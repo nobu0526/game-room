@@ -24,10 +24,10 @@
 
 <%if user_signed_in? %>
 <div class="rooms">
-  <% current_user.rooms.each do |room| %>
+  <% current_user.followings.each do |follow| %>
      <div class="room">
       <div class="room-name">
-       <%= link_to current_user.followings, room_messages_path(room) %>
+       <%= link_to current_user.follow, room_messages_path(room) %>
       </div>
     </div>
   <% end %>
