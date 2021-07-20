@@ -10,7 +10,7 @@
         <div class="users_name">
           <% @users.each do |user| %>
              <div class="user-name">
-               <%= link_to user.nickname, user_path(user) %>
+               <%= link_to user.nickname,user_path(user.id) %>
             </div>
            </div>
         </div>

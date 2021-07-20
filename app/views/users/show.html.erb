@@ -1,9 +1,4 @@
-<%# <span id="user_<%= @user.id" class="follow-wrapper"> %>
-  <%# <%= render 'follow_form', user: @user if signed_in? %>
-<%# </span> %>
+<%= render 'follow_form' %>
+<%= render 'stats' %>
 
-  <%# <h4>
-    <%= render 'users/stats' %>
-  <%# </h4> %> 
-
-  
+ <%= render ‘relationships/follow_button’, user: @user %>   
