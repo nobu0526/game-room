@@ -90,14 +90,16 @@
 <img width="922" alt="e6f0dcb8b09b7c5c35f2940c3c90bdb9" src="https://user-images.githubusercontent.com/82923269/126299796-f83904f3-ec33-4d43-a73f-bd7307e5a3b7.png">
 
 本画面にて、チャットをするユーザを選択し、チャットルーム名を決めチャットを行う予定です。
+そうして作ったチャットルームがトップページ左にて、ユーザ名として出力されます。
 
 ◆マイページ（本画面ではuser1)
 <img width="922" alt="f92c27f0013d7069b9f5ffcd41661ccb" src="https://user-images.githubusercontent.com/82923269/126299892-0eacf6e1-7712-4469-8aad-3bf8472b0f50.png">
 
 本画面にて、プロフィール等々の編集を行ったりします。
+マイページにて、フォロー申請の確認を行うこともします。
 
 
-他ユーザページ（本画面ではuser2)
+◆他ユーザページ（本画面ではuser2)
 <img width="918" alt="b19cad8261e538031a12b754929bf7d1" src="https://user-images.githubusercontent.com/82923269/126300093-5728ea28-af69-413f-8008-7c31ca2a93af.png">
 
 本画面にて、他ユーザに対し、フォロー申請を行います。
