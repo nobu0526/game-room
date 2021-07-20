@@ -14,21 +14,22 @@ class UsersController < ApplicationController
 
   def show
     @nickname = current_user.nickname
+    @user = User.relationships
+    @users = User.find(params[:id])
+
   end
 
   def following
-    @title = "フォロー"
-    @user = User.find(params[:id])
+    @user  = User.find(params[:id])
     @users = @user.followings
     render 'show_follow'
-  end
+end
 
-  def followers
-    @title = "フォロワー"
-    @user = User.find(params[:id])
-    @users = @user.followers
-    render 'show_follow'
-  end
+def followers
+  @user  = User.find(params[:id])
+  @users = @user.followers
+  render 'show_follower'
+end
 
   private
   def user_params
